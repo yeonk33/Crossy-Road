@@ -1,0 +1,1751 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.55f1 (9f374180d209) revision 10434369'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32375 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.55f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/yeonk/Unity/Crossy-Road/Crossy-Road
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+63256
+Successfully changed project path to: C:/Users/yeonk/Unity/Crossy-Road/Crossy-Road
+C:/Users/yeonk/Unity/Crossy-Road/Crossy-Road
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5468]  Target information:
+
+Player connection [5468]  * "[IP] 192.168.35.237 [Port] 0 [Flags] 2 [Guid] 3642580714 [EditorId] 3642580714 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ITHKBTT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5468] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5468] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 5.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.55f1 (9f374180d209)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/yeonk/Unity/Crossy-Road/Crossy-Road/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c06)
+    Vendor:   NVIDIA
+    VRAM:     6031 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007411 seconds.
+- Loaded All Assemblies, in  0.242 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 193 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.405 seconds
+Domain Reload Profiling: 646ms
+	BeginReloadAssembly (70ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (100ms)
+		LoadAssemblies (70ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (98ms)
+			TypeCache.Refresh (97ms)
+				TypeCache.ScanAssembly (88ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (405ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (375ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (247ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.414 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.415 seconds
+Domain Reload Profiling: 828ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (261ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (416ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3533 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (54.9 KB). Loaded Objects now: 4003.
+Memory consumption went from 127.2 MB to 127.2 MB.
+Total: 3.835800 ms (FindLiveObjects: 0.427300 ms CreateObjectMapping: 0.218600 ms MarkObjects: 3.074100 ms  DeleteObjects: 0.115000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1299820.737865 seconds.
+  path: Assets/Downloads
+  artifactKey: Guid(aca6db36308c5ed48b49d20546986fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads using Guid(aca6db36308c5ed48b49d20546986fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '06b4abc2aff7e6337aee63bd7c9aec91') in 0.002380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.410507 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_002.obj
+  artifactKey: Guid(35f8f6df2a4ad1444949683f66f3574c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_002.obj using Guid(35f8f6df2a4ad1444949683f66f3574c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1d1e019ccbd6683895b9d3cded0a5295') in 0.105306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 493.092971 seconds.
+  path: Assets/3D Road Tiles/roadTile_002.obj
+  artifactKey: Guid(eac422be8a3e4c441a904e7a0610118b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_002.obj using Guid(eac422be8a3e4c441a904e7a0610118b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1f94233244ec31d00decaa59a0cae42c') in 0.018079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 5.478329 seconds.
+  path: Assets/3D Road Tiles/Materials/Asphalt.mat
+  artifactKey: Guid(0daccd4389215804d85bcd937d384d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/Materials/Asphalt.mat using Guid(0daccd4389215804d85bcd937d384d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5e156df69a5c4e9ab73211711b7124a3') in 0.013441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/Materials/FrontColor.mat
+  artifactKey: Guid(79864dd88e233ba46929ee130d32c66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/Materials/FrontColor.mat using Guid(79864dd88e233ba46929ee130d32c66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a48691e430fa5b0a342ab77fd1475425') in 0.011573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/Materials/Grey_Asphalt.mat
+  artifactKey: Guid(9236a0d2d41ce5542b0e1761b09858a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/Materials/Grey_Asphalt.mat using Guid(9236a0d2d41ce5542b0e1761b09858a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e8119b751c5507bb25b0dc1187efd7ac') in 0.012597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.306546 seconds.
+  path: Assets/3D Road Tiles/roadTile_007.obj
+  artifactKey: Guid(7e3148b201e3a22428fb2e9d252619bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_007.obj using Guid(7e3148b201e3a22428fb2e9d252619bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4188e6a71afb76222280908d2ca43374') in 0.016452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.024781 seconds.
+  path: Assets/3D Road Tiles/roadTile_012.obj
+  artifactKey: Guid(821db59a507c252428b1aed3147413a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_012.obj using Guid(821db59a507c252428b1aed3147413a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '73d9643e10c54ed850c753efdf4434c5') in 0.017243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.237139 seconds.
+  path: Assets/3D Road Tiles/roadTile_017.obj
+  artifactKey: Guid(df031478952e08d4ba8af558648b59c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_017.obj using Guid(df031478952e08d4ba8af558648b59c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7adf399dd62409b38cd92de711e1eba7') in 0.016140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.837758 seconds.
+  path: Assets/3D Road Tiles/roadTile_027.obj
+  artifactKey: Guid(8b61d7220e83c374cb872248be962e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_027.obj using Guid(8b61d7220e83c374cb872248be962e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3b759dcfa6255caa3133173c217979a0') in 0.016316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Road Tiles/roadTile_043.obj
+  artifactKey: Guid(0bcc1e8906ac36148a0cd7f9dff82859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_043.obj using Guid(0bcc1e8906ac36148a0cd7f9dff82859) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '02b0faac6df005425ff1c693a9e1b141') in 0.017953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Road Tiles/roadTile_041.obj
+  artifactKey: Guid(2d94b421c65c12a4597a925429375820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_041.obj using Guid(2d94b421c65c12a4597a925429375820) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f5409f594faf595c8cb20adadbb1433e') in 0.015529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_059.obj
+  artifactKey: Guid(c39d7d9976b11ce4db371c8ad552da6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_059.obj using Guid(c39d7d9976b11ce4db371c8ad552da6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '035ce349fbc3de81cb0d5dc97081b241') in 0.015462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_094.obj
+  artifactKey: Guid(7dcac3131ddf760488e199b847a32239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_094.obj using Guid(7dcac3131ddf760488e199b847a32239) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '925bb2d0c20ec5570c5878f35dfdba27') in 0.015019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_101.obj
+  artifactKey: Guid(5e7ab825c9a862a47a1514de611bab73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_101.obj using Guid(5e7ab825c9a862a47a1514de611bab73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a2f10b2dab14e77ce39290f57f3793e0') in 0.016888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_121.obj
+  artifactKey: Guid(021ea4f71538b144e904080151667066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_121.obj using Guid(021ea4f71538b144e904080151667066) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd789393d9239bd25794d98c301da4018') in 0.017423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Road Tiles/roadTile_111.obj
+  artifactKey: Guid(43e24126603a8c94b9b255a7951fec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_111.obj using Guid(43e24126603a8c94b9b255a7951fec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0dbd060bc1b3500cd92a003cc7c35f30') in 0.018530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_136.obj
+  artifactKey: Guid(6a65453c4ffd53d458474ee5b1de979e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_136.obj using Guid(6a65453c4ffd53d458474ee5b1de979e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2afa6d986d635dce120d876ca3950254') in 0.017108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_077.obj
+  artifactKey: Guid(aeef6b58cec9a7e46a9e87ad1b9314e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_077.obj using Guid(aeef6b58cec9a7e46a9e87ad1b9314e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '44fc8c2334614acdec9ea40af93222c9') in 0.011326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_152.obj
+  artifactKey: Guid(4747186367b99604084c345f0c628e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_152.obj using Guid(4747186367b99604084c345f0c628e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'acb913cfdca29b79920b3257835954f8') in 0.016595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_115.obj
+  artifactKey: Guid(d7e12554618c6e3469036aa77d4245e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_115.obj using Guid(d7e12554618c6e3469036aa77d4245e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1e73fa45536d8986375efd064f69a68e') in 0.017315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_173.obj
+  artifactKey: Guid(7517b637680459040868513e4d2e5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_173.obj using Guid(7517b637680459040868513e4d2e5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1715fcb180fe27e113304a4367b03950') in 0.018258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_193.obj
+  artifactKey: Guid(52be7818e64a85e4fa1271b01d8cfdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_193.obj using Guid(52be7818e64a85e4fa1271b01d8cfdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '876c0e50ef39c8bf62eb43ccaa1a1bc5') in 0.017346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_064.obj
+  artifactKey: Guid(ae515e9ecba51e84b8fd4530225990c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_064.obj using Guid(ae515e9ecba51e84b8fd4530225990c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '636ef5757706d3a8e7ac8c6414622b76') in 0.017343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_216.obj
+  artifactKey: Guid(b3494dcdff175d947aa0ff969d48fd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_216.obj using Guid(b3494dcdff175d947aa0ff969d48fd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f4f292aecb62ad5a475e195120e33645') in 0.018960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/3D Road Tiles/roadTile_226.obj
+  artifactKey: Guid(ff5129b44388d254bb6f844a4d0ecede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_226.obj using Guid(ff5129b44388d254bb6f844a4d0ecede) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '534206fb6cdc36fc40b046cfb70d0bff') in 0.016632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_235.obj
+  artifactKey: Guid(32abaa56cba2bc54a94e4006c05c84bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_235.obj using Guid(32abaa56cba2bc54a94e4006c05c84bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6d1ba40ab04d0131992711136cc2b1fb') in 0.017504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_135.obj
+  artifactKey: Guid(ba1c81b62d997c44c9d08418e3f5ffe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_135.obj using Guid(ba1c81b62d997c44c9d08418e3f5ffe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '199742389126292f1ffd1bc9be2515ea') in 0.016039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_143.obj
+  artifactKey: Guid(1480df1d75c4c284ba803f9544d3e8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_143.obj using Guid(1480df1d75c4c284ba803f9544d3e8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cc845f8a81c7aeb33d700f93956d7a03') in 0.016791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Road Tiles/roadTile_266.obj
+  artifactKey: Guid(b7afa2f3f28e6ea4d954f43fcf036d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_266.obj using Guid(b7afa2f3f28e6ea4d954f43fcf036d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9b487b5c96028110e28cd7b404ca09c2') in 0.016200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_272.obj
+  artifactKey: Guid(60731b16ad6906b42ba53d5a1616dc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_272.obj using Guid(60731b16ad6906b42ba53d5a1616dc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9cbb32ff2d8b974e132eb0d5382f73a3') in 0.016925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Road Tiles/roadTile_276.obj
+  artifactKey: Guid(88d519b951387624ab25467837d169c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_276.obj using Guid(88d519b951387624ab25467837d169c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd8eb7375f9592ad0ad5932ffc895e46b') in 0.016914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Road Tiles/roadTile_132.obj
+  artifactKey: Guid(36cf01f92be59ae499ef607afba36ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_132.obj using Guid(36cf01f92be59ae499ef607afba36ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ab0a839d623a658de23eb251739790d9') in 0.028736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_297.obj
+  artifactKey: Guid(4ea0bd55cf2328e4495f1829a6ee4842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_297.obj using Guid(4ea0bd55cf2328e4495f1829a6ee4842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '613eb0ed0d62afd7ec23f1914b20985e') in 0.017321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_299.obj
+  artifactKey: Guid(d6a86f0c9752cc241914544b56dc7d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_299.obj using Guid(d6a86f0c9752cc241914544b56dc7d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd6dfb53b67a5e08ac2ee574224f93c4d') in 0.017249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Road Tiles/roadTile_174.obj
+  artifactKey: Guid(4c12242327ebc8f49bda77b5a876aee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_174.obj using Guid(4c12242327ebc8f49bda77b5a876aee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e5cfa2f05fac5b5bbaa1d693ddc6d878') in 0.016297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_159.obj
+  artifactKey: Guid(fab01cef6df02504996e9643d6bec6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_159.obj using Guid(fab01cef6df02504996e9643d6bec6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '59f559452d6e114465580ad834b7825e') in 0.015185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_204.obj
+  artifactKey: Guid(7ea7c51bc6b116e4a8ca80dd7f6bb425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_204.obj using Guid(7ea7c51bc6b116e4a8ca80dd7f6bb425) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c114f1048509cc185c3428418ebc6215') in 0.019003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_222.obj
+  artifactKey: Guid(e6ba02ff57c6f0d4b8b3d6a41ffffa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_222.obj using Guid(e6ba02ff57c6f0d4b8b3d6a41ffffa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '22a0de9deabc3adaf6085dccb07dd6b5') in 0.014340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_191.obj
+  artifactKey: Guid(2893772d85ec13349827335415a19a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_191.obj using Guid(2893772d85ec13349827335415a19a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7de66fa89a5a8ec5731fe6acd7fca2e1') in 0.016167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_141.obj
+  artifactKey: Guid(816317db3b3588042b3b59d651564ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_141.obj using Guid(816317db3b3588042b3b59d651564ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '553d7a2a97d79a2198122d5c998ea573') in 0.015806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Road Tiles/roadTile_269.obj
+  artifactKey: Guid(42cde6954761ad241ba1272766a69f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_269.obj using Guid(42cde6954761ad241ba1272766a69f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3b619b750079ba5f677fcf0916f9f541') in 0.016159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3D Road Tiles/roadTile_274.obj
+  artifactKey: Guid(6aa8ccd8193678e4d8ad7f0a66fc7a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_274.obj using Guid(6aa8ccd8193678e4d8ad7f0a66fc7a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c2f34180db8df9606fd98c9117117284') in 0.015656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Road Tiles/roadTile_161.obj
+  artifactKey: Guid(69fa8b40ff365e24a9adbf4a602906bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_161.obj using Guid(69fa8b40ff365e24a9adbf4a602906bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '41f7f8928fd946f0388924d8ba0a8e11') in 0.015683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_293.obj
+  artifactKey: Guid(e6d4f1904a1fc4b4eae6efbf47da244f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_293.obj using Guid(e6d4f1904a1fc4b4eae6efbf47da244f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1d56d6cc02fa7e06f8e6b28dfe174e62') in 0.015471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_035.obj
+  artifactKey: Guid(826f4000c49ad184380196606301a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_035.obj using Guid(826f4000c49ad184380196606301a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4a122ac4e39a3da6dab219c7a8b4009d') in 0.015943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_288.obj
+  artifactKey: Guid(ade02946e9157f6488ecef8b6d074984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_288.obj using Guid(ade02946e9157f6488ecef8b6d074984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9fc2b7cb6ec5f06b40a54c4fd8c041ec') in 0.015214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_280.obj
+  artifactKey: Guid(231aceb7be1a3be41a5eee46b1cb16c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_280.obj using Guid(231aceb7be1a3be41a5eee46b1cb16c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7ade4a09038ace1e50e3b92a3dbe0982') in 0.015861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_281.obj
+  artifactKey: Guid(f35a932e04813b947b93866fd2387273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_281.obj using Guid(f35a932e04813b947b93866fd2387273) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '841ca980264f2ebc4c43f0e022dfeced') in 0.016541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_290.obj
+  artifactKey: Guid(b0414e2bcfac5e64f83b53f99fa4deb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_290.obj using Guid(b0414e2bcfac5e64f83b53f99fa4deb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e837169487c2a68e7039d4d6287561cc') in 0.015154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_229.obj
+  artifactKey: Guid(e08965952960d9d418e57303f0884d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_229.obj using Guid(e08965952960d9d418e57303f0884d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'deb293aa24c690d690de97a5d71c0205') in 0.015444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3D Road Tiles/roadTile_249.obj
+  artifactKey: Guid(b6258d5ba3e0ef74f9178e68961857fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_249.obj using Guid(b6258d5ba3e0ef74f9178e68961857fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd2a85d64d10f8f0344f1ecb95b0f42d3') in 0.015464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_183.obj
+  artifactKey: Guid(4cbb97c1f2cd2584f92036b151afb5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_183.obj using Guid(4cbb97c1f2cd2584f92036b151afb5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3464f6e0cf1c73d72358e53e2a90de20') in 0.016082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_254.obj
+  artifactKey: Guid(53e2654eecfbf19468825ced3cd7ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_254.obj using Guid(53e2654eecfbf19468825ced3cd7ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1670bedbfeeda78bd459d9a60c8c50cf') in 0.015159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_205.obj
+  artifactKey: Guid(a72568c09cdd48a459b079a73d4f9f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_205.obj using Guid(a72568c09cdd48a459b079a73d4f9f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '073284d34cdc424d0b62e5a8b828d466') in 0.016487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_238.obj
+  artifactKey: Guid(22230f9fe4761f04caec69b6c67f3c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_238.obj using Guid(22230f9fe4761f04caec69b6c67f3c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0d9dfaa4e7cecba8c42fd75a7e9754af') in 0.017081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_255.obj
+  artifactKey: Guid(3819e35d0a812ed448434dbc28cc37ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_255.obj using Guid(3819e35d0a812ed448434dbc28cc37ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '37bfa9bfd2b93a72b0d11cef5c790886') in 0.015105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/3D Road Tiles/roadTile_125.obj
+  artifactKey: Guid(0b9a88cbd72c25b4a893328efeffcea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_125.obj using Guid(0b9a88cbd72c25b4a893328efeffcea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8188bd72b89f91d446be03a3cf1516e3') in 0.016921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Road Tiles/roadTile_286.obj
+  artifactKey: Guid(c50ba648a6fbd834caf27bde64b74add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_286.obj using Guid(c50ba648a6fbd834caf27bde64b74add) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f1e5e82330a0a6cc8e6abe5224950e8f') in 0.015694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_287.obj
+  artifactKey: Guid(74b53857d71ba474b804786a15bfb79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_287.obj using Guid(74b53857d71ba474b804786a15bfb79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '80e02a86ca29887d4a6ddfba78f09b45') in 0.015377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Road Tiles/roadTile_292.obj
+  artifactKey: Guid(7a896a9c01e277143896e847b79e5100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_292.obj using Guid(7a896a9c01e277143896e847b79e5100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '628639d3b4d5d4f7d9be1aad4182bdf0') in 0.015080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_233.obj
+  artifactKey: Guid(c42486e65930a4b418e189cbe2c84a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_233.obj using Guid(c42486e65930a4b418e189cbe2c84a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8d996d9dd16f1fe9b71f346ee7d5ab3a') in 0.016724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_048.obj
+  artifactKey: Guid(32576ad4f93a0a940911fb55c93c4012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_048.obj using Guid(32576ad4f93a0a940911fb55c93c4012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd758bb992ce38b7642aa7c9254c60c87') in 0.016061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_062.obj
+  artifactKey: Guid(91fb904fcf3b1e14eaf5d933340a5d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_062.obj using Guid(91fb904fcf3b1e14eaf5d933340a5d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6c16dbf8090dfbc0d74d284ca27d4299') in 0.014901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.864964 seconds.
+  path: Assets/3D Road Tiles/roadTile_252.obj
+  artifactKey: Guid(930081bb2f4008c4182692bd037c0847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_252.obj using Guid(930081bb2f4008c4182692bd037c0847) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '13a870c90ab56c2a74a66e6917965e0d') in 0.015374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_248.obj
+  artifactKey: Guid(90e55c5d6b7d30f45bd68353d7b85513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_248.obj using Guid(90e55c5d6b7d30f45bd68353d7b85513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2fd8d84d9f7d8c7090ff6fe8e731c3e0') in 0.016159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3D Road Tiles/roadTile_237.obj
+  artifactKey: Guid(6728ced9855a2364e92ffce9a26f3b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_237.obj using Guid(6728ced9855a2364e92ffce9a26f3b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '17bdfcc3acfa6bd77f1e8f4403537c54') in 0.016710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_195.obj
+  artifactKey: Guid(dc8a99a8fcec92e428ccaa351546a56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_195.obj using Guid(dc8a99a8fcec92e428ccaa351546a56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2f4b5ef2e2b9d8ed00341765cf2be0fc') in 0.016312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/3D Road Tiles/roadTile_197.obj
+  artifactKey: Guid(8d75900b3737f5343b9c8de289049fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_197.obj using Guid(8d75900b3737f5343b9c8de289049fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1c8cb6323700382b5712ae3682668fa8') in 0.015650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_148.obj
+  artifactKey: Guid(3daa7ceaa61b3ef468d72bcb5f465440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_148.obj using Guid(3daa7ceaa61b3ef468d72bcb5f465440) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '402a0df31dc88f0114445abf4fee9dde') in 0.016513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3D Road Tiles/roadTile_139.obj
+  artifactKey: Guid(cbff12669464cc24d9d56b8b2da6e684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_139.obj using Guid(cbff12669464cc24d9d56b8b2da6e684) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8ae838a409d9b2c63291af18f4532d5c') in 0.017037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_128.obj
+  artifactKey: Guid(f958d7b45090d02439573e3641b8b755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_128.obj using Guid(f958d7b45090d02439573e3641b8b755) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '71f83fde7278c09e27728274a6f9aa7d') in 0.015258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Road Tiles/roadTile_107.obj
+  artifactKey: Guid(65e8052fafb4b9840bf9df714798edb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_107.obj using Guid(65e8052fafb4b9840bf9df714798edb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aa590554e4931df319891cee14841476') in 0.016392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Road Tiles/roadTile_097.obj
+  artifactKey: Guid(db18667a1fcb228498fb4e1e65b56607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_097.obj using Guid(db18667a1fcb228498fb4e1e65b56607) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c15800e079fb5a9fa12a0d4e44867e2f') in 0.015692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Road Tiles/roadTile_091.obj
+  artifactKey: Guid(90c6fa207b56dc243a6b01c975a7b027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_091.obj using Guid(90c6fa207b56dc243a6b01c975a7b027) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6ed8e26161d0e2823496220eb3b0cc88') in 0.015286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Road Tiles/roadTile_082.obj
+  artifactKey: Guid(c4f2d6f1bdbb09049bd2c31f6b8f921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_082.obj using Guid(c4f2d6f1bdbb09049bd2c31f6b8f921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2430e9080d9f4ec4f175a9b647968033') in 0.017065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_083.obj
+  artifactKey: Guid(e4cbf59abc44ba246b0779e0bcc578af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_083.obj using Guid(e4cbf59abc44ba246b0779e0bcc578af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '23322595329d0a88c711f5afaa16ad65') in 0.015955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_072.obj
+  artifactKey: Guid(473beca9cb6179b4b8391bbc4cd77528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_072.obj using Guid(473beca9cb6179b4b8391bbc4cd77528) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1520ce57a344424de25324a6855e9d0b') in 0.016832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Road Tiles/roadTile_099.obj
+  artifactKey: Guid(3812e2604f8648743ac27688b867582c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_099.obj using Guid(3812e2604f8648743ac27688b867582c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '36133fb1e27a605b00111f9f91536f58') in 0.016741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_055.obj
+  artifactKey: Guid(35667902ca23031448f3bc496791ca7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_055.obj using Guid(35667902ca23031448f3bc496791ca7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5e155880cd6185fc425cdc9fbf169351') in 0.015770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Road Tiles/roadTile_053.obj
+  artifactKey: Guid(5a61be048484f6048a7340ab9d3ec1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_053.obj using Guid(5a61be048484f6048a7340ab9d3ec1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '207618518a2a9c734e044527998a3bde') in 0.016232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/3D Road Tiles/roadTile_047.obj
+  artifactKey: Guid(e9344cc9001d469499e8a09a9d2ad61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_047.obj using Guid(e9344cc9001d469499e8a09a9d2ad61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e115f173b005ce93540399ee2354cab6') in 0.016562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D Road Tiles/roadTile_045.obj
+  artifactKey: Guid(9e0e58ab82292274e93fdc47be655ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_045.obj using Guid(9e0e58ab82292274e93fdc47be655ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1696b21a2a105b5e2dff13b7d64d243c') in 0.016652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_038.obj
+  artifactKey: Guid(5b827b989169b484f902bb5f2341b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_038.obj using Guid(5b827b989169b484f902bb5f2341b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4d5f13f539fbd95d39d9ec960b48f1bb') in 0.015588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_078.obj
+  artifactKey: Guid(86c08e71c11cf154480cbbaaf169dba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_078.obj using Guid(86c08e71c11cf154480cbbaaf169dba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bb0bd6e34cba4280a76ad15dffbd80ed') in 0.015835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_030.obj
+  artifactKey: Guid(21add50527265ad438ccd7a11e9d61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_030.obj using Guid(21add50527265ad438ccd7a11e9d61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '96ac5a6c274bd836ab479e63c5022c43') in 0.015695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/3D Road Tiles/roadTile_054.obj
+  artifactKey: Guid(9c6df83e7d76dbf4286f7084e7f4e5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_054.obj using Guid(9c6df83e7d76dbf4286f7084e7f4e5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '92dc91bcd82349ac91f90a1db4f4a642') in 0.016442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Road Tiles/roadTile_073.obj
+  artifactKey: Guid(072e6bd43f36231418217e7e053766a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_073.obj using Guid(072e6bd43f36231418217e7e053766a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd4bdbb5ca3f88b3a0fdc5b0b0444b3df') in 0.016149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_102.obj
+  artifactKey: Guid(21257777e99b2454c8b027256a1d0f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_102.obj using Guid(21257777e99b2454c8b027256a1d0f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd0fcb0e8a7f42878f9e6b53c0a35f4a8') in 0.015523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Road Tiles/roadTile_181.obj
+  artifactKey: Guid(37f1edecf87608c4f8fd63bc3a8e4d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_181.obj using Guid(37f1edecf87608c4f8fd63bc3a8e4d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b152205638ea7a05bd60d2609083f16a') in 0.015887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 216.639526 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_023.obj
+  artifactKey: Guid(e83fedd570cce9b42bf8b430f501df3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_023.obj using Guid(e83fedd570cce9b42bf8b430f501df3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'fa18f39bc3aa98e89f711f900e5bcafe') in 0.024845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_026.obj
+  artifactKey: Guid(722e6415da1eee540945b802a39e9857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_026.obj using Guid(722e6415da1eee540945b802a39e9857) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '22fe7cdc5e7c8dbeacbf71a5d857eba6') in 0.026502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_031.obj
+  artifactKey: Guid(3459fa1f0afa965439cc1d35424cdae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_031.obj using Guid(3459fa1f0afa965439cc1d35424cdae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '28cfcfb04d58500f06a6347e971140da') in 0.026878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_032.obj
+  artifactKey: Guid(b10c9d333665cb84fa712fae04a7726c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_032.obj using Guid(b10c9d333665cb84fa712fae04a7726c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aab232e26768fc10f5978af973de3bf9') in 0.020988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_034.obj
+  artifactKey: Guid(8749b8e907514324e956635cc6c9ecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_034.obj using Guid(8749b8e907514324e956635cc6c9ecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f1c9e3cba3d2c85efce36a4ab6562528') in 0.022273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_029.obj
+  artifactKey: Guid(abe65491c174bf44185f65042f06761d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_029.obj using Guid(abe65491c174bf44185f65042f06761d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1049924c55002545a30ec1135f369908') in 0.018685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_024.obj
+  artifactKey: Guid(45ad3c86b43d51b4cb6edf007ca47ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/kenney_3d-road-tiles/Models/roadTile_024.obj using Guid(45ad3c86b43d51b4cb6edf007ca47ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a1cbbf658d47ef41668884fbc8df4a26') in 0.020439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 117.710164 seconds.
+  path: Assets/3D Road Tiles/roadTile_138.obj
+  artifactKey: Guid(78ca336c3c3c1174aa040b4f267480af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_138.obj using Guid(78ca336c3c3c1174aa040b4f267480af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '36f1c7b311451b18345a6c27da399322') in 0.016068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.025901 seconds.
+  path: Assets/3D Road Tiles/roadTile_155.obj
+  artifactKey: Guid(ed7e181feee797f44b71efd90b1eb2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_155.obj using Guid(ed7e181feee797f44b71efd90b1eb2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0b10d64436d56f1e7c19eb39f0aed180') in 0.015991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 131.394721 seconds.
+  path: Assets/3D Road Tiles/roadTile_162.obj
+  artifactKey: Guid(d85ff23cc0581754692c9166f1be2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_162.obj using Guid(d85ff23cc0581754692c9166f1be2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'fb3c6e80170f9eb272adfbe9c906dd3d') in 0.016906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.558654 seconds.
+  path: Assets/3D Road Tiles/roadTile_163.obj
+  artifactKey: Guid(2d3f540d2e0d6c043811b6ee062a2e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_163.obj using Guid(2d3f540d2e0d6c043811b6ee062a2e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '07e884ef999bbdf18c3fb64f27f6749b') in 0.018120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 139.097355 seconds.
+  path: Assets/3D Road Tiles/roadTile_168.obj
+  artifactKey: Guid(a0a6bdb0b71749d4882f483134c429c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_168.obj using Guid(a0a6bdb0b71749d4882f483134c429c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '90eccf4d5ef935a086791a056553e79b') in 0.017844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.179448 seconds.
+  path: Assets/3D Road Tiles/roadTile_169.obj
+  artifactKey: Guid(02ce35b9eb1a9ec43b04d213aa6da845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_169.obj using Guid(02ce35b9eb1a9ec43b04d213aa6da845) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b7363ff99d918429f939338b3ac94939') in 0.017608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.038482 seconds.
+  path: Assets/3D Road Tiles/roadTile_171.obj
+  artifactKey: Guid(531dd694633b2c14bba16f981e53c31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_171.obj using Guid(531dd694633b2c14bba16f981e53c31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '375284b1c1dec098d5d70b49bec27df7') in 0.017505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.286 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.680 seconds
+Domain Reload Profiling: 965ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (681ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (338ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3525 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 4050.
+Memory consumption went from 133.0 MB to 133.0 MB.
+Total: 3.222500 ms (FindLiveObjects: 0.240400 ms CreateObjectMapping: 0.074000 ms MarkObjects: 2.870300 ms  DeleteObjects: 0.037200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.269 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.677 seconds
+Domain Reload Profiling: 946ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (165ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (678ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (341ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (257ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.4 KB). Loaded Objects now: 4053.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 3.214000 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.125300 ms MarkObjects: 2.741500 ms  DeleteObjects: 0.046400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.267 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.642 seconds
+Domain Reload Profiling: 908ms
+	BeginReloadAssembly (100ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (161ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (642ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (334ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (250ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 4056.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 3.040200 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.050000 ms MarkObjects: 2.657800 ms  DeleteObjects: 0.036900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.267 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.660 seconds
+Domain Reload Profiling: 927ms
+	BeginReloadAssembly (103ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (120ms)
+		LoadAssemblies (160ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (661ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (331ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.4 KB). Loaded Objects now: 4059.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 3.141300 ms (FindLiveObjects: 0.366200 ms CreateObjectMapping: 0.072900 ms MarkObjects: 2.669300 ms  DeleteObjects: 0.032200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 705.743846 seconds.
+  path: Assets/3D Road Tiles/roadTile_161.obj
+  artifactKey: Guid(69fa8b40ff365e24a9adbf4a602906bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_161.obj using Guid(69fa8b40ff365e24a9adbf4a602906bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2c6a3c0031ae1268a58eb412fa1c9319') in 0.077651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/3D Road Tiles/roadTile_164.obj
+  artifactKey: Guid(3fdd2c5747ea48344bb70185496669c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_164.obj using Guid(3fdd2c5747ea48344bb70185496669c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '429e39e3e0b260aba50c0de9f5c71fd4') in 0.017686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Road Tiles/roadTile_165.obj
+  artifactKey: Guid(e97d5de15aedb7d49a96917a509689d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Road Tiles/roadTile_165.obj using Guid(e97d5de15aedb7d49a96917a509689d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '444a214227c0c010eb1a65edc79b7180') in 0.011545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
