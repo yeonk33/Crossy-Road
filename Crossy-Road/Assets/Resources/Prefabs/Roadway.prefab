@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2105643189724373914}
+  - component: {fileID: 6535599370584802340}
   m_Layer: 0
   m_Name: Roadway
   m_TagString: Untagged
@@ -39,6 +40,19 @@ Transform:
   - {fileID: 8433990213375275558}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6535599370584802340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271399043843312407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331e7822dbd39da4d8b81c6f0e109b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsUsing: 0
 --- !u!1001 &186497396947515045
 PrefabInstance:
   m_ObjectHideFlags: 0

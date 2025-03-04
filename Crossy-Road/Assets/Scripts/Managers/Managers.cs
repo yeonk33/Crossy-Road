@@ -20,5 +20,7 @@ public class Managers : MonoBehaviour
 	}
 
 	private PoolManager _pool;
+	private MapManager _map;
 	public static PoolManager Pool => Instance._pool ??= new PoolManager().Init();
+	public static MapManager Map => Instance._map ??= new MapManager();
 }

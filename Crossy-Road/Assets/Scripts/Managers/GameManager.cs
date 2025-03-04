@@ -15,11 +15,11 @@ public class GameManager : MonoBehaviour
 		Managers.Pool.CreatePool(_roadway, 10);
 
 		// 맵 생성 @@@@ 나중에 랜덤으로 바꾸기
-		Managers.Pool.Pop(_sidewalk);
-		Managers.Pool.Pop(_sidewalk, 3);
-		Managers.Pool.Pop(_roadway, 6);
-		Managers.Pool.Pop(_roadway, 9);
-		Managers.Pool.Pop(_sidewalk, 12);
+		//Managers.Pool.Pop(_sidewalk);
+		//Managers.Pool.Pop(_sidewalk, 3);
+		//Managers.Pool.Pop(_roadway, 6);
+		//Managers.Pool.Pop(_roadway, 9);
+		//Managers.Pool.Pop(_sidewalk, 12);
 
 	}
 }
