@@ -28,7 +28,7 @@ public class MapManager : MonoBehaviour
 		int index = UnityEngine.Random.Range(0, mapPrefabs.Length);
 		maps.Enqueue(Managers.Pool.Pop(mapPrefabs[index], z));
 		z += interval;
-		Debug.Log(z);
+		
 		if (maps.Count > mapLength) {
 			Managers.Pool.Push(maps.Dequeue());
 		}

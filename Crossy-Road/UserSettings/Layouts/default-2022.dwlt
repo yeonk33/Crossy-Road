@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 140
+  controlID: 116
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -490,7 +490,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -52276
+  m_LastSelectedObjectID: 23924
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -617,7 +617,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -625,16 +625,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\yeonk\Unity\Crossy-Road\Crossy-Road
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c600000
-    m_LastClickedID: 24636
-    m_ExpandedIDs: 00000000f85f0000fa5f0000fc5f00000a6000000e600000ffffff7f
+    m_SelectedIDs: 10600000
+    m_LastClickedID: 24592
+    m_ExpandedIDs: 00000000086000000a6000000c6000000e60000010600000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,7 +662,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f85f0000fa5f0000fc5f0000
+    m_ExpandedIDs: 00000000086000000a6000000c6000000e60000010600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f8600000666100006e610000fe62000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1100,9 +1100,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.31693056, y: -33.137268, z: 98.527725}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0.31693056, y: -33.137268, z: 98.527725}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1152,9 +1152,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 28.012337
+    m_Target: 36.510284
     speed: 2
-    m_Value: 26.806065
+    m_Value: 36.510284
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1216,9 +1216,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cc33ffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8e33ffffcc33ffffa835ffff4c3affffa243ffff1e47ffff2247ffff8e68ffff2e6dffff326dffff1c94ffffbc98ffffc098ffff28fbfffff4ffffff
+      m_SelectedIDs: 745d0000
+      m_LastClickedID: 23924
+      m_ExpandedIDs: 28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

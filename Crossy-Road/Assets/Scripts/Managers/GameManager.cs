@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] GameObject _sidewalk;
 	[SerializeField] GameObject _roadway;
 
+	public bool gameStart = false;
 
 	private void Awake()
 	{
