@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-	[SerializeField] Vector3 rotateDelta = new Vector3(70, -15, 0);
-	[SerializeField] Vector3 positionDelta = new Vector3(3, 15, 0);
-	[SerializeField] float speed = 3.0f;
+	[SerializeField] Vector3 positionDelta = new Vector3(3, 10, 0);
+	[SerializeField] Vector3 rotateDelta = new Vector3(65, -22, 0);
+	[SerializeField] float speed = 2.0f;
 
 	private void Start()
 	{

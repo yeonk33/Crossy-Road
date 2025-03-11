@@ -38,7 +38,7 @@ public class MapManager : MonoBehaviour
 	{
 		while (true) {
 			RepositionMap();
-			yield return new WaitForSeconds(1.0f);
+			yield return new WaitForSeconds(5.0f);
 			
 		}
 	}
