@@ -8,6 +8,7 @@ public class PoolManager
 
 	public PoolManager Init() // Pool들의 root object 생성
 	{
+		Debug.Log(System.Environment.StackTrace);
 		if (_root == null) {
 			_root = new GameObject("Pool Root").transform;
 			Object.DontDestroyOnLoad(_root);
