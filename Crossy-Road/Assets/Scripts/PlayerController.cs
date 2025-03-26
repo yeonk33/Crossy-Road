@@ -12,11 +12,9 @@ public class PlayerController : MonoBehaviour
 	private bool isMoving = false;
 	private Vector2 swipeStart;
 	private PlayerInput playerInput;
-
 	private InputAction holdAction;
 	private InputAction swipeAction;
 
-	private Vector2 clickStartPos;
 	private void Awake()
 	{
 		playerInput = GetComponent<PlayerInput>();
@@ -27,6 +25,25 @@ public class PlayerController : MonoBehaviour
 		holdAction.started += HoldAction_started;
 		holdAction.performed += HoldAction_performed; // 짧게 탭할 경우 performed 실행
 		holdAction.canceled += HoldAction_canceled;	  // 길게 누를 경우 canceled 실행
+	}
+
+	private void OnDestroy()
+	{
+		holdAction.started -= HoldAction_started;
+		holdAction.performed -= HoldAction_performed;
+		holdAction.canceled -= HoldAction_canceled;
+	}
+
+	private void HoldAction_started(InputAction.CallbackContext context)
+	{
+		swipeStart = swipeAction.ReadValue<Vector2>();
+	}
+
+	private void HoldAction_performed(InputAction.CallbackContext context)
+	{
+		if (!isMoving) {
+			StartCoroutine(Move(transform.position + Vector3.forward * distance));
+		}
 	}
 
 	private void HoldAction_canceled(InputAction.CallbackContext obj)
@@ -50,25 +67,6 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	private void OnDestroy()
-	{
-		holdAction.started -= HoldAction_started;
-		holdAction.performed -= HoldAction_performed;
-		holdAction.canceled -= HoldAction_canceled;
-	}
-
-	private void HoldAction_started(InputAction.CallbackContext context)
-	{
-		swipeStart = swipeAction.ReadValue<Vector2>();
-	}
-
-	private void HoldAction_performed(InputAction.CallbackContext context)
-	{
-		if (!isMoving) {
-			StartCoroutine(Move(transform.position + Vector3.forward * distance));
-		}
-	}
-
 	private IEnumerator Move(Vector3 dest)
 	{
 		isMoving = true;
@@ -89,5 +87,13 @@ public class PlayerController : MonoBehaviour
 
 		transform.position = dest;
 		isMoving = false;
+	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.CompareTag("Car")) {
+			Debug.Log("게임오버");
+			// reset game
+		}
 	}
 }

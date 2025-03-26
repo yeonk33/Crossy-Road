@@ -347,7 +347,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 2.6, z: -10.8}
+  m_LocalPosition: {x: 17, y: 21, z: -10.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,9 +365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43765151fa81cf44a4be52fa47c7faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionDelta: {x: 3, y: 10, z: 0}
+  positionDelta: {x: 7, y: 21, z: 0}
   rotateDelta: {x: 65, y: -22, z: 0}
-  speed: 1
+  speed: 2
 --- !u!33 &983867023103817470
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ Transform:
   m_GameObject: {fileID: 5489122872566599306}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 1.3, y: 2, z: 10.5}
+  m_LocalPosition: {x: 4.5, y: 2, z: 10.5}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -469,6 +469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 3
   speed: 5
+  minDis: 0
+  jumpHeight: 0.5
 --- !u!114 &8692343327159134755
 MonoBehaviour:
   m_ObjectHideFlags: 0
