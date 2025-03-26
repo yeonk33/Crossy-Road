@@ -20,8 +20,13 @@ public class MapManager : MonoBehaviour
 			Object.DontDestroyOnLoad(_root);
 
 			mapPrefabs = new List<GameObject>();
-			mapPrefabs.Add(Resources.Load<GameObject>("Prefabs/Roadway"));
 			mapPrefabs.Add(Resources.Load<GameObject>("Prefabs/Sidewalk"));
+			mapPrefabs.Add(Resources.Load<GameObject>("Prefabs/Roadway"));
+
+			// pool생성
+			Managers.Pool.CreatePool(mapPrefabs[0], 10);
+			Managers.Pool.CreatePool(mapPrefabs[1], 10);
+			
 		}
 
 		// 초기 맵 배치
@@ -33,7 +38,7 @@ public class MapManager : MonoBehaviour
 		return this;	
 	}
 
-	private void RepositionMap()
+	public void RepositionMap()
 	{
 		int index = UnityEngine.Random.Range(0, mapPrefabs.Count);
 		maps.Enqueue(Managers.Pool.Pop(mapPrefabs[index], z));

@@ -48,6 +48,7 @@ public class Roadway : MonoBehaviour
 	// 차선마다 방향 세팅
 	private void Init()
 	{
+		Managers.Pool.CreatePool(this.gameObject, 10);
 		index = Random.Range(0, spawnPoint.Length); // 0: left, 1: right
 		if (index == 0) {
 			quaternion = Quaternion.Euler(0, 90, 0);

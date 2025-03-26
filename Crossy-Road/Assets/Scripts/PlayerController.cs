@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
 		if (onGround) Move(dir);
 
-		Debug.Log($"swipeVector {swipeVector}\ndir {dir}");
+		//Debug.Log($"swipeVector {swipeVector}\ndir {dir}");
 	}
 
 	private void SwipeAction_performed(InputAction.CallbackContext obj)
@@ -75,7 +75,10 @@ public class PlayerController : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		if (collision.collider.CompareTag("Ground")) {
+			Debug.Log("onGround");
 			onGround = true;
+			Managers.Game.score++;
+			Managers.Map.RepositionMap();
 		}
 	}
 }

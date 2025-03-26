@@ -369,6 +369,7 @@
 "Assets/Scripts/PlayerAction.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Roadway.cs"
+"Assets/Scripts/Scenes/MainScene.cs"
 "Assets/Scripts/Utils/Extensions.cs"
 -langversion:9.0
 /deterministic
