@@ -6,15 +6,6 @@
             "id": "f2f31881-ce01-4caf-bbe2-a3735a29e97a",
             "actions": [
                 {
-                    "name": "Forward",
-                    "type": "Button",
-                    "id": "2d22c144-e4c6-4ab6-b5eb-7f38c1b991d8",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Swipe",
                     "type": "Value",
                     "id": "45f23484-7d3a-4c3d-9dbe-6d497b9908f1",
@@ -24,36 +15,16 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "7925f73f-4f95-4bc6-83ce-12de1f148619",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "New action",
+                    "name": "Hold",
                     "type": "Button",
                     "id": "405a9916-2a53-4658-9289-a31344e47e04",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Tap(duration=0.1,pressPoint=0.5)",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "c9140c65-bb39-4719-b3d2-09a1357d4025",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";PC",
-                    "action": "Forward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "d5500345-b3f8-4a5b-b83b-f45fd4d357f4",
@@ -67,23 +38,12 @@
                 },
                 {
                     "name": "",
-                    "id": "7986338b-0bd0-44d9-af43-4a45bcc8443e",
+                    "id": "cc080359-42d4-4e3e-8e1d-0a583b59ed18",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";PC",
-                    "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cc080359-42d4-4e3e-8e1d-0a583b59ed18",
-                    "path": "<Mouse>/press",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";PC",
-                    "action": "New action",
+                    "action": "Hold",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
