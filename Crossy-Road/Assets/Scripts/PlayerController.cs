@@ -1,84 +1,60 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] private float jumpForce = 2f;
-	[SerializeField] private float moveForce = 2.55f;
-	public float JumpForce => jumpForce;
-	public float MoveForce => moveForce;
-
+	[SerializeField] private float distance = 3.0f; // 한 칸 이동 거리
+	[SerializeField] private float speed = 5f;
+	private bool isMoving = false;
 	private PlayerInput playerInput;
-    private InputAction moveAction;
-    private InputAction swipeAction;
-	private Vector2 touchStart;
-	private Vector2 touchEnd;
-
-	private Rigidbody rigid;
-	private bool onGround;
-
+	private InputAction action;
 
 
 	private void Awake()
 	{
 		playerInput = GetComponent<PlayerInput>();
-		moveAction = playerInput.actions["Touch"];
-		moveAction.performed += OnMoveForward;    // 이동 입력 감지
-		swipeAction = playerInput.actions["Swipe"];
-		swipeAction.performed += SwipeAction_performed;
-		swipeAction.canceled += SwipeAction_canceled;
 
-		rigid = GetComponent<Rigidbody>();
-		onGround = false;
+		action = playerInput.actions["Forward"];
+		action.performed += Action_performed;
 	}
 
-	private void SwipeAction_canceled(InputAction.CallbackContext obj)
+	private void Action_performed(InputAction.CallbackContext obj)
 	{
-		Vector2 swipeVector = -(obj.ReadValue<Vector2>() - touchStart);
-		Vector3 dir;
-
-		if (Mathf.Abs(swipeVector.x) > Mathf.Abs(swipeVector.y)) {  // 좌우 이동
-			dir = swipeVector.x >= 0 ? Vector3.right : Vector3.left;
-		} else if (swipeVector.y < 0) {
-			dir = Vector3.back;
-		} else {
-			dir = Vector3.forward;
-		}
-
-		if (onGround) Move(dir);
-
-		//Debug.Log($"swipeVector {swipeVector}\ndir {dir}");
+		OnMove();
 	}
 
-	private void SwipeAction_performed(InputAction.CallbackContext obj)
+	private void OnMove()
 	{
-		touchStart = obj.ReadValue<Vector2>();
-		//Debug.Log("SwipeAction_performed");
-	}
-
-	private void OnMoveForward(InputAction.CallbackContext context)
-	{
-		if (onGround) Move(Vector3.forward);
-	}
-
-	private void Move(Vector3 direction)
-	{
-		onGround = false;
-		Vector3 jumpDirection = direction * moveForce + Vector3.up * jumpForce;
-		rigid.AddForce(jumpDirection, ForceMode.Impulse);
-	}
-
-	private void OnCollisionEnter(Collision collision)
-	{
-		if (collision.collider.CompareTag("Ground")) {
-			Debug.Log("onGround");
-			onGround = true;
-			Managers.Game.score++;
-			Managers.Map.RepositionMap();
+		if (!isMoving) {
+			StartCoroutine(Move(transform.position + new Vector3(0, 0, distance)));
 		}
 	}
+
+	private IEnumerator Move(Vector3 dest)
+	{
+		isMoving = true;
+		Vector3 startPos = transform.position;
+		float timer = 0f;
+		float duration = Vector3.Distance(startPos, dest) / speed; // 이동 시간
+		float height = 0.5f; // 점프 높이
+
+		while (timer < duration) {
+			timer += Time.deltaTime;
+			float t = timer / duration; // 0 -> 1 진행 비율
+
+			// 이동
+			Vector3 newPos = Vector3.MoveTowards(startPos, dest, timer / duration * Vector3.Distance(startPos, dest));
+			newPos.y += Mathf.Sin(t * Mathf.PI) * height; // y축 점프
+
+			// 최종 위치 적용
+			transform.position = newPos;
+
+			yield return null;
+		}
+
+		transform.position = dest; // 정확한 위치 보정
+		isMoving = false;
+	}
+
 }
