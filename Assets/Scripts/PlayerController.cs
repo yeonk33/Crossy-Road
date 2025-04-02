@@ -31,6 +31,15 @@ public class PlayerController : MonoBehaviour
 		preZ = transform.position.z;
 	}
 
+	private void Update()
+	{
+		Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+
+		if (viewPos.z < 0 || viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1) {
+			Debug.Log("카메라 벗어남");
+			Managers.Game.GameOver();
+		}
+	}
 	private void OnDestroy()
 	{
 		holdAction.started -= HoldAction_started;
