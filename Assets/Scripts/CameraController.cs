@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-	[SerializeField] Vector3 positionDelta = new Vector3(3, 10, 0);
+	public Vector3 positionDelta = new Vector3(5.6f, 17f, 3f);
 	[SerializeField] Vector3 rotateDelta = new Vector3(65, -22, 0);
 	[SerializeField] float speed = 2.0f;
 
@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour
 	}
 	private void LateUpdate()
 	{
-		//if (Managers.Game.gameStart) {
+		if (Managers.Game.gameStart) {
 			transform.position += new Vector3(0, 0, 1) * Time.deltaTime * speed;
-		//}
+		}
 	}
 }

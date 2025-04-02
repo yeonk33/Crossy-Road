@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
 
 	private IEnumerator Move(Vector3 dest)
 	{
+		Managers.Game.GameStart();
 		isMoving = true;
 		Vector3 startPos = transform.position;
 		float timer = 0f;
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Car")) {
 			Debug.Log("게임오버");
-			// reset game
+			Managers.Game.GameOver();
 		}
 	}
 }

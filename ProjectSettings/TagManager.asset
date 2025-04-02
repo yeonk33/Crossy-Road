@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Car
+  - Obstacle
+  - Coin
   layers:
   - Default
   - TransparentFX

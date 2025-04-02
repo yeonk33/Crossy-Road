@@ -6,7 +6,7 @@ public class MainScene : MonoBehaviour
 {
 	private void Awake()
 	{
-		Managers.Game.GameStart();
+		Managers.Game.Init();
 		Managers.Map.Init();
 	}
 }

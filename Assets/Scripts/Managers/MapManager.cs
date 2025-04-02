@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class MapManager : MonoBehaviour
 {
 	[SerializeField] List<GameObject> mapPrefabs;
 	[SerializeField] int mapLength = 10;
-	private int z = 0;
+	private int z = 12;
 	private int interval = 3;
 	private Queue<Poolable> maps = new Queue<Poolable>();
 	Transform _root;
@@ -28,12 +27,7 @@ public class MapManager : MonoBehaviour
 			Managers.Pool.CreatePool(mapPrefabs[1], 10);
 			
 		}
-
-		// ÃÊ±â ¸Ê ¹èÄ¡
-		for (int i = 0; i < mapLength; i++) {
-			RepositionMap();
-		}
-
+		MapInit();
 		//StartCoroutine(InfiniteCoroutine());	
 		return this;	
 	}
@@ -46,6 +40,18 @@ public class MapManager : MonoBehaviour
 		
 		if (maps.Count > mapLength) {
 			Managers.Pool.Push(maps.Dequeue());
+		}
+	}
+
+	public void MapInit()
+	{
+		z = 12;
+		for (int i = 0; i < maps.Count; i++) {
+			Managers.Pool.Push(maps.Dequeue());
+		}
+
+		for (int i = 0; i < mapLength; i++) {
+			RepositionMap();
 		}
 	}
 
