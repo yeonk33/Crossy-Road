@@ -6,7 +6,7 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
 	[SerializeField] List<GameObject> mapPrefabs;
-	[SerializeField] int mapLength = 10;
+	[SerializeField] int mapLength = 15;
 	private int z = 12;
 	private int interval = 3;
 	private Queue<Poolable> maps = new Queue<Poolable>();
@@ -50,7 +50,7 @@ public class MapManager : MonoBehaviour
 			Managers.Pool.Push(maps.Dequeue());
 		}
 
-		for (int i = 0; i < mapLength; i++) {
+		for (int i = 0; i < 10; i++) {
 			RepositionMap();
 		}
 	}

@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
 		if (preZ < transform.position.z) {
 			//Debug.Log(++Managers.Game.score);
 			Managers.Game.MoveForward();
+			Managers.Map.RepositionMap();
 			preZ = transform.position.z;
 		}
 	}
