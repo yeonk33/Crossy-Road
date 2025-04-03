@@ -6,6 +6,7 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
 	[SerializeField] List<GameObject> mapPrefabs;
+	public List<GameObject> obstaclePrefabs;
 	[SerializeField] int mapLength = 15;
 	private int z = 12;
 	private int interval = 3;
@@ -22,10 +23,18 @@ public class MapManager : MonoBehaviour
 			mapPrefabs.Add(Resources.Load<GameObject>("Prefabs/Sidewalk"));
 			mapPrefabs.Add(Resources.Load<GameObject>("Prefabs/Roadway"));
 
+			obstaclePrefabs = new List<GameObject>();
+			obstaclePrefabs.Add(Resources.Load<GameObject>("Prefabs/Tree_4"));
+			obstaclePrefabs.Add(Resources.Load<GameObject>("Prefabs/Rocks_2"));
+			obstaclePrefabs.Add(Resources.Load<GameObject>("Prefabs/Tree_Cut"));
+
 			// pool»ý¼º
 			Managers.Pool.CreatePool(mapPrefabs[0], 10);
 			Managers.Pool.CreatePool(mapPrefabs[1], 10);
 			
+			Managers.Pool.CreatePool(obstaclePrefabs[0], 10);
+			Managers.Pool.CreatePool(obstaclePrefabs[1], 10);
+			Managers.Pool.CreatePool(obstaclePrefabs[2], 10);
 		}
 		MapInit();
 		//StartCoroutine(InfiniteCoroutine());	

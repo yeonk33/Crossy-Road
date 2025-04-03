@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5233090558650212506}
   - component: {fileID: 6773596093001990644}
   - component: {fileID: 1878228131690652256}
+  - component: {fileID: -5558818225518286139}
   m_Layer: 0
   m_Name: Tree_4
   m_TagString: Obstacle
@@ -129,3 +130,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.91052437, y: 1.894896, z: 0.9472849}
   m_Center: {x: -0.00000022351742, y: 0.94644797, z: -0.0000008046627}
+--- !u!114 &-5558818225518286139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686355937330282156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331e7822dbd39da4d8b81c6f0e109b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsUsing: 0

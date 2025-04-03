@@ -147,6 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2382370069656028849}
   - component: {fileID: 4381711561132417933}
+  - component: {fileID: -8389396662633524802}
   m_Layer: 0
   m_Name: Sidewalk
   m_TagString: Ground
@@ -190,6 +191,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsUsing: 0
+--- !u!114 &-8389396662633524802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905678483080433922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1847795ccb11e424d9bcd6a710cea4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558105918389811736
 GameObject:
   m_ObjectHideFlags: 0
