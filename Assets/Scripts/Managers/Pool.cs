@@ -43,7 +43,6 @@ public class Pool
 	{
 		// stack에 없으면 새로 만들기
 		Poolable poolable = _poolables.Count > 0 ? _poolables.Pop() : Create();
-
 		poolable.ActiveObject(z);
 		poolable.IsUsing = true;
 		//poolable.transform.SetParent(parent);

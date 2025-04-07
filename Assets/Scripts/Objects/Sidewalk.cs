@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Sidewalk : MonoBehaviour
 {
-	private List<Poolable> gameObjects;
+	private List<Poolable> objects;
 	private void Start()
 	{
 		Init();
@@ -11,7 +11,7 @@ public class Sidewalk : MonoBehaviour
 
 	private void Init()
 	{
-		gameObjects = new List<Poolable>();
+		objects = new List<Poolable>();
 		// Camera left limit(-0.14, 0.57, 7.52)
 		// Camera right limit(8.5, 0.64, 7.37)
 		float y = 0.65f;
@@ -21,15 +21,17 @@ public class Sidewalk : MonoBehaviour
 			float x = Random.Range(0.57f, 8.5f);
 			GameObject obs = Managers.Pool.Pop(Managers.Map.obstaclePrefabs[Random.Range(0, Managers.Map.obstaclePrefabs.Count)]).gameObject;
 			obs.transform.position = new Vector3(x, y, z);
-			gameObjects.Add(obs.GetOrAddComponent<Poolable>());
+			objects.Add(obs.GetOrAddComponent<Poolable>());
 		}
 	}
 
 	private void OnDisable()
 	{
+		if (objects == null) return;
 		//Debug.Log($"Sidewalk Disabled! {gameObjects.Count}°³ Push");
-		foreach (var item in gameObjects) {
-			Managers.Pool.Push(item);
+		foreach (var item in objects) {
+			if (item != null && item.gameObject != null) 
+				Managers.Pool.Push(item);
 		}
 	}
 }

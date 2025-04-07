@@ -15,6 +15,7 @@ public class Car : MonoBehaviour
 		// 맞은편 spawnpoint에 도달하면 pool에 넣기
 		if (Vector3.Distance(transform.position, end) < 0.5f) {
 			Managers.Pool.Push(this.GetComponent<Poolable>());
+			start = false;
 		}
 
 		if (start)
@@ -28,5 +29,9 @@ public class Car : MonoBehaviour
 		this.end = endPos;
 		this.speed = speed;
 		start = true;
+	}
+	private void OnDisable()
+	{
+		start = false;
 	}
 }

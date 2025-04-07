@@ -54,6 +54,10 @@ public class PlayerController : MonoBehaviour
 
 	private void HoldAction_performed(InputAction.CallbackContext context)
 	{
+		if (!Managers.Game.gameStart) {
+			Managers.Game.GameStart();
+		}
+
 		if (!isMoving) {
 			StartCoroutine(Move(transform.position + Vector3.forward * distance));
 		}
@@ -61,6 +65,10 @@ public class PlayerController : MonoBehaviour
 
 	private void HoldAction_canceled(InputAction.CallbackContext obj)
 	{
+		if (!Managers.Game.gameStart) {
+			Managers.Game.GameStart();
+		}
+
 		Vector2 swipeEnd = swipeAction.ReadValue<Vector2>();
 		Vector2 delta = swipeEnd - swipeStart;
 
@@ -82,7 +90,6 @@ public class PlayerController : MonoBehaviour
 
 	private IEnumerator Move(Vector3 dest)
 	{
-		Managers.Game.GameStart();
 		isMoving = true;
 		Vector3 startPos = transform.position;
 		float timer = 0f;
@@ -103,7 +110,6 @@ public class PlayerController : MonoBehaviour
 		isMoving = false;
 
 		if (preZ < transform.position.z) {
-			//Debug.Log(++Managers.Game.score);
 			Managers.Game.MoveForward();
 			Managers.Map.RepositionMap();
 			preZ = transform.position.z;
@@ -116,5 +122,10 @@ public class PlayerController : MonoBehaviour
 			Debug.Log("게임오버");
 			Managers.Game.GameOver();
 		}
+	}
+
+	public void PlayerReset()
+	{
+		preZ = 0;
 	}
 }

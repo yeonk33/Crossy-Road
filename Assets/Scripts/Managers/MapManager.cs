@@ -7,6 +7,7 @@ public class MapManager : MonoBehaviour
 {
 	[SerializeField] List<GameObject> mapPrefabs;
 	public List<GameObject> obstaclePrefabs;
+	public List<GameObject> carPrefabs;
 	[SerializeField] int mapLength = 15;
 	private int z = 12;
 	private int interval = 3;
@@ -28,6 +29,9 @@ public class MapManager : MonoBehaviour
 			obstaclePrefabs.Add(Resources.Load<GameObject>("Prefabs/Rocks_2"));
 			obstaclePrefabs.Add(Resources.Load<GameObject>("Prefabs/Tree_Cut"));
 
+			carPrefabs = new List<GameObject>();
+			carPrefabs.Add(Resources.Load<GameObject>("Prefabs/Car"));
+
 			// pool»ý¼º
 			Managers.Pool.CreatePool(mapPrefabs[0], 10);
 			Managers.Pool.CreatePool(mapPrefabs[1], 10);
@@ -35,9 +39,11 @@ public class MapManager : MonoBehaviour
 			Managers.Pool.CreatePool(obstaclePrefabs[0], 10);
 			Managers.Pool.CreatePool(obstaclePrefabs[1], 10);
 			Managers.Pool.CreatePool(obstaclePrefabs[2], 10);
+
+			Managers.Pool.CreatePool(carPrefabs[0], 15);
 		}
 		MapInit();
-		//StartCoroutine(InfiniteCoroutine());	
+		
 		return this;	
 	}
 
@@ -45,22 +51,39 @@ public class MapManager : MonoBehaviour
 	{
 		int index = UnityEngine.Random.Range(0, mapPrefabs.Count);
 		maps.Enqueue(Managers.Pool.Pop(mapPrefabs[index], z));
+
 		z += interval;
 		
 		if (maps.Count > mapLength) {
 			Managers.Pool.Push(maps.Dequeue());
+			Roadway roadway = maps.Peek().GetComponent<Roadway>();
+			if (roadway != null) { // Roadway
+				roadway.Init();
+				roadway.StartCarSpawn();
+			}
 		}
 	}
 
 	public void MapInit()
 	{
 		z = 12;
-		for (int i = 0; i < maps.Count; i++) {
+
+		while (maps.Count > 0) {
 			Managers.Pool.Push(maps.Dequeue());
 		}
 
 		for (int i = 0; i < 10; i++) {
 			RepositionMap();
+		}
+
+		foreach (var m in maps) {
+			if (m != null) {
+				Roadway roadway = m.GetComponent<Roadway>();
+				if (roadway != null) { // Roadway
+					roadway.Init();
+					roadway.StartCarSpawn();
+				}
+			}
 		}
 	}
 

@@ -38,5 +38,6 @@ public class GameManager
 		Managers.Map.MapInit();
 		player.transform.position = new Vector3(4.5f, 2, 4.5f);
 		Camera.main.gameObject.transform.position =  Camera.main.gameObject.GetComponent<CameraController>().positionDelta;
+		player.GetComponent<PlayerController>().PlayerReset();
 	}
 }
