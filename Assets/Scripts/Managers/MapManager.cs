@@ -8,6 +8,7 @@ public class MapManager : MonoBehaviour
 	[SerializeField] List<GameObject> mapPrefabs;
 	public List<GameObject> obstaclePrefabs;
 	public List<GameObject> carPrefabs;
+	private GameObject coinPrefab;
 	[SerializeField] int mapLength = 15;
 	private int z = 12;
 	private int interval = 3;
@@ -32,6 +33,8 @@ public class MapManager : MonoBehaviour
 			carPrefabs = new List<GameObject>();
 			carPrefabs.Add(Resources.Load<GameObject>("Prefabs/Car"));
 
+			coinPrefab = Resources.Load<GameObject>("Prefabs/Coin");
+
 			// pool»ý¼º
 			Managers.Pool.CreatePool(mapPrefabs[0], 10);
 			Managers.Pool.CreatePool(mapPrefabs[1], 10);
@@ -41,6 +44,8 @@ public class MapManager : MonoBehaviour
 			Managers.Pool.CreatePool(obstaclePrefabs[2], 10);
 
 			Managers.Pool.CreatePool(carPrefabs[0], 15);
+
+			Managers.Pool.CreatePool(coinPrefab, 5);
 		}
 		MapInit();
 		
@@ -61,6 +66,17 @@ public class MapManager : MonoBehaviour
 				roadway.Init();
 				roadway.StartCarSpawn();
 			}
+		}
+
+		CoinSpawn();
+	}
+
+	private void CoinSpawn()
+	{
+		float p = Random.Range(0f, 10f);
+		if (p < 1f) {
+			Poolable coin = Managers.Pool.Pop(coinPrefab);
+			coin.gameObject.transform.position = new Vector3(Random.Range(0.57f, 8.5f), 1.5f, z - 1.5f);
 		}
 	}
 

@@ -124,6 +124,14 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("Coin")) {
+			Managers.Game.GetCoin();
+			Managers.Pool.Push(other.gameObject.GetComponent<Poolable>());
+		}
+	}
+
 	public void PlayerReset()
 	{
 		preZ = 0;
