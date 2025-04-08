@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -54,6 +55,10 @@ public class PlayerController : MonoBehaviour
 
 	private void HoldAction_performed(InputAction.CallbackContext context)
 	{
+		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
+			return; // UI(광고버튼)클릭이면 게임 시작 막기
+		}
+
 		if (!Managers.Game.gameStart) {
 			Managers.Game.GameStart();
 		}
@@ -65,6 +70,10 @@ public class PlayerController : MonoBehaviour
 
 	private void HoldAction_canceled(InputAction.CallbackContext obj)
 	{
+		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
+			return; // UI(광고버튼)클릭이면 게임 시작 막기
+		}
+
 		if (!Managers.Game.gameStart) {
 			Managers.Game.GameStart();
 		}

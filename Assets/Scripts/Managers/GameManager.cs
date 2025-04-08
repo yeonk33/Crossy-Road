@@ -20,6 +20,7 @@ public class GameManager
 	public void GameStart()
 	{
 		gameStart = true;
+		Managers.UI.ButtonOnOff(false);
 	}
 
 	public void MoveForward()
@@ -40,6 +41,7 @@ public class GameManager
 		player.GetComponent<PlayerController>().PlayerReset();
 		totalCoin += coin;
 		Managers.Data.SaveCoins(totalCoin);
+		Managers.UI.ButtonOnOff(true);
 	}
 
 	public void GetCoin()
