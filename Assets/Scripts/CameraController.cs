@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
 
 	private void Start()
 	{
-		transform.Rotate(rotateDelta);
+		transform.rotation = Quaternion.Euler(rotateDelta);
 		transform.position = positionDelta;
 	}
 	private void LateUpdate()

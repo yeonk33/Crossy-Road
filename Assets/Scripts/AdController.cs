@@ -44,7 +44,7 @@ public class AdController : MonoBehaviour
 			rewardedAd.Show((Reward reward) =>
 			{
 				Debug.Log("광고 시청 완료");
-				int coin = Managers.Data.RoadCoins() + 5;
+				int coin = Managers.Data.LoadCoins() + 5;
 				Managers.UI.SetCoin(coin);
 				Managers.Data.SaveCoins(coin);
 			});

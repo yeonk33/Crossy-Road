@@ -12,7 +12,7 @@ public class GameManager
 	{
 		score = 0;
 		Managers.UI.SetScore(score);
-		totalCoin = Managers.Data.RoadCoins();
+		totalCoin = Managers.Data.LoadCoins();
 		Managers.UI.SetCoin(coin);
 		player = GameObject.Find("Player");
 	}
@@ -40,6 +40,7 @@ public class GameManager
 		Camera.main.gameObject.transform.position =  Camera.main.gameObject.GetComponent<CameraController>().positionDelta;
 		player.GetComponent<PlayerController>().PlayerReset();
 		totalCoin += coin;
+		coin = 0;
 		Managers.Data.SaveCoins(totalCoin);
 		Managers.UI.ButtonOnOff(true);
 	}
