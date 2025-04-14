@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,25 +12,85 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float jumpHeight = 0.5f;
 
 	private bool isMoving = false;
-	private Vector2 swipeStart;
 	private PlayerInput playerInput;
-	private InputAction holdAction;
-	private InputAction swipeAction;
-
+	private InputAction moveAction;
+	private bool isHolding = false;
+	private Vector2 mouseDownPos;
+	private Vector2 mouseUpPos;
+	private Vector3 dir;
 	private float preZ;
 
 	private void Awake()
 	{
 		playerInput = GetComponent<PlayerInput>();
-
-		holdAction = playerInput.actions["Hold"]; // Interaction : Tap
-		swipeAction = playerInput.actions["Swipe"];
-
-		holdAction.started += HoldAction_started;
-		holdAction.performed += HoldAction_performed; // 짧게 탭할 경우 performed 실행
-		holdAction.canceled += HoldAction_canceled;   // 길게 누를 경우 canceled 실행
+		moveAction = playerInput.actions["Move"];
+		moveAction.started += MoveAction_started; // mouse down시 실행
+		moveAction.performed += MoveAction_performed; // 누르는 중일 시 실행
+		moveAction.canceled += MoveAction_canceled; // mouse up시 실행
 
 		preZ = transform.position.z;
+	}
+
+	private void MoveAction_started(InputAction.CallbackContext obj)
+	{
+		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
+			return; // UI(광고버튼)클릭이면 게임 시작 막기
+		}
+
+		mouseDownPos = Mouse.current.position.ReadValue(); // 클릭 시작 위치 저장
+
+		if (!Managers.Game.gameStart) {
+			Managers.Game.GameStart();
+		}
+	}
+
+	private void MoveAction_performed(InputAction.CallbackContext obj)
+	{
+		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
+			return; // UI(광고버튼)클릭이면 게임 시작 막기
+		}
+
+		isHolding = true; // 긴 터치(스와이프)를 구분하기 위한 변수
+	}
+
+	private void MoveAction_canceled(InputAction.CallbackContext obj)
+	{
+		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
+			return; // UI(광고버튼)클릭이면 게임 시작 막기
+		}
+
+		if (!isHolding) { // 짧은 터치면 앞으로
+			dir = Vector3.forward;
+		} else {
+			mouseUpPos = Mouse.current.position.ReadValue();
+			dir = CheckDirection(mouseDownPos, mouseUpPos); // 스와이프 방향 체크
+			isHolding = false;
+		}
+
+		if (!isMoving) {
+			StartCoroutine(Move(transform.position + dir * distance));
+		}
+	}
+
+	private Vector3 CheckDirection(Vector2 downPos, Vector2 upPos)
+	{
+		if (Vector3.Distance(downPos, upPos) < 10f) { // 스와이프 너무 조금하면 앞으로 이동
+			return Vector3.forward;
+
+		} else if (Math.Abs(downPos.x - upPos.x) > Math.Abs(downPos.y - upPos.y)) {
+			if (downPos.x < upPos.x) { // 오른쪽 이동
+				return Vector3.right;
+			} else { // 왼쪽 이동
+				return Vector3.left;
+			}
+
+		} else {
+			if (downPos.y < upPos.y) { // 앞으로 이동
+				return Vector3.forward;
+			} else { // 뒤로 이동
+				return Vector3.back;
+			}
+		}
 	}
 
 	private void Update()
@@ -43,58 +104,7 @@ public class PlayerController : MonoBehaviour
 	}
 	private void OnDestroy()
 	{
-		holdAction.started -= HoldAction_started;
-		holdAction.performed -= HoldAction_performed;
-		holdAction.canceled -= HoldAction_canceled;
-	}
 
-	private void HoldAction_started(InputAction.CallbackContext context)
-	{
-		swipeStart = swipeAction.ReadValue<Vector2>();
-	}
-
-	private void HoldAction_performed(InputAction.CallbackContext context)
-	{
-		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
-			return; // UI(광고버튼)클릭이면 게임 시작 막기
-		}
-
-		if (!Managers.Game.gameStart) {
-			Managers.Game.GameStart();
-		}
-
-		if (!isMoving) {
-			StartCoroutine(Move(transform.position + Vector3.forward * distance));
-		}
-	}
-
-	private void HoldAction_canceled(InputAction.CallbackContext obj)
-	{
-		if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) {
-			return; // UI(광고버튼)클릭이면 게임 시작 막기
-		}
-
-		if (!Managers.Game.gameStart) {
-			Managers.Game.GameStart();
-		}
-
-		Vector2 swipeEnd = swipeAction.ReadValue<Vector2>();
-		Vector2 delta = swipeEnd - swipeStart;
-
-		Vector3 dir = Vector3.zero;
-
-		if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y)) {
-			dir = delta.x > 0 ? Vector3.right : Vector3.left;
-		} else {
-			dir = delta.y > 0 ? Vector3.forward : Vector3.back;
-		}
-
-		if (delta.magnitude < minDis)
-			dir = Vector3.forward; // 앞으로 이동
-
-		if (!isMoving) {
-			StartCoroutine(Move(transform.position + dir * distance));
-		}
 	}
 
 	private IEnumerator Move(Vector3 dest)
