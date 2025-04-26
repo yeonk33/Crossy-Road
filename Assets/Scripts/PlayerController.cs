@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
 	[SerializeField] private float distance = 3.0f; // 한 칸 이동 거리
-	[SerializeField] private float speed = 5f;
+	[SerializeField] private float speed = 20.0f;
 	[SerializeField] private float minDis = 50f; // 최소 스와이프 거리
 	[SerializeField] private float jumpHeight = 0.5f;
 
@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 	private Vector3 dir;
 	private float preZ;
 
+	private CameraController camera;
+
 	private void Awake()
 	{
 		playerInput = GetComponent<PlayerInput>();
@@ -29,6 +31,8 @@ public class PlayerController : MonoBehaviour
 		moveAction.canceled += MoveAction_canceled; // mouse up시 실행
 
 		preZ = transform.position.z;
+
+		camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
 	}
 
 	private void MoveAction_started(InputAction.CallbackContext obj)
@@ -97,10 +101,11 @@ public class PlayerController : MonoBehaviour
 	{
 		Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
 
-		if (viewPos.z < 0 || viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1) {
-			Debug.Log("카메라 벗어남");
-			Managers.Game.GameOver();
-		}
+		//if (viewPos.z < 0 || viewPos.x < 0 || viewPos.x > 1 || viewPos.y < 0 || viewPos.y > 1) {
+		//	Debug.Log("카메라 벗어남");
+		//	Managers.Game.GameOver();
+		//}
+		
 	}
 	private void OnDestroy()
 	{
@@ -132,6 +137,8 @@ public class PlayerController : MonoBehaviour
 			Managers.Game.MoveForward();
 			Managers.Map.RepositionMap();
 			preZ = transform.position.z;
+			Debug.Log("Move Camera called");
+			camera.MoveCamera();
 		}
 	}
 
