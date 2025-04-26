@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
 		
 		while (elapsed < duration) {
 			float t = elapsed / duration;
-			t = Mathf.Sin(t * Mathf.PI * 0.5f);
+			t = Mathf.Sin(t * Mathf.PI * 0.5f); // 보간 방식: EaseOutSine
 
 			transform.position = Vector3.Lerp(start, dest, t);
 			elapsed += Time.deltaTime;

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 	private Vector3 dir;
 	private float preZ;
 
-	private CameraController camera;
+	private CameraController cameraController;
 
 	private void Awake()
 	{
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
 		preZ = transform.position.z;
 
-		camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
+		cameraController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
 	}
 
 	private void MoveAction_started(InputAction.CallbackContext obj)
@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
 			Managers.Map.RepositionMap();
 			preZ = transform.position.z;
 			Debug.Log("Move Camera called");
-			camera.MoveCamera();
+			cameraController.MoveCamera();
 		}
 	}
 
